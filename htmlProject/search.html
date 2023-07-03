@@ -1,0 +1,127 @@
+<html>
+    <head>
+        <style>
+            *{
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+                border: none;
+                outline: none;
+            }
+            body{
+                margin: 0;
+                padding: 0;
+                min-height: 100vh;
+                background-color:#f9f9f9f9;
+                font-family: "Roboto",sabs-serif;
+            }
+            header{
+                margin-left: 23%;
+                margin-top: 15%;
+                margin-right: 30%;
+                width: 50%;
+                padding: 15px;
+                background-color: blueviolet;
+                border-radius: 15px;
+                box-shadow: 0 0 10px rgb( 0, 0, 0,0.3);
+            }
+            .search-bar{
+                display: flex;
+                position: relative;
+                width: 550px;
+                height: 48px;
+                margin: 0 auto;
+                border-radius: 4px;
+
+            }
+            .input-search{
+                width:100%;
+                flex: 1;
+            }
+            .input-search input{
+                display: block;
+                width: 100%;
+                height: 100%;
+                padding-left: 20px;
+                color: black;
+                background-color: #ffffff;
+                font-size: 14px;
+                border-radius: 15px;
+            }
+            .search-menu{
+                display: none;
+                width: 100%;
+                padding: 20px 30px;
+                color: #999999;
+                background-color: #262626;
+                border-radius: 10px;
+                font-size: 14px;
+                box-shadow: 0 0 10px rgb( 0, 0, 0,0.3);
+                position: absolute;
+                top: calc(100% + 4px);
+                left: 0;
+                z-index: 10;
+            }
+            .search-related a{
+                display:flex ;
+                align-items: center;
+                justify-content: space-between;
+                color: #999999;
+                font-size: 14px;
+                text-decoration: none;
+                line-height: 32px;
+                transition: all 0.13s;
+            }
+            .search-related a:hover{
+                color: #ffffff;
+            }
+            .input-search input:focus + .search-menu{
+                display: block;
+            }
+        </style>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/line-awesome/1.3.0/line-awesome/css/line-awesome.min.css"
+         integrity="sha512-vebUliqxrVkBy3gucMhClmyQP9On/HAWQdKDXRaAlb/FKuTbxkjPKUyqVOxAcGwFDka79eTF+YXwfke1h3/wfg==" 
+         crossorigin="anonymous" 
+         referrerpolicy="no-referrer" />
+    </head>
+    <body>
+       <header>
+        <div class="search-bar">
+            <label class="input-search">
+                <input type="text" placeholder="Search">
+                <div class="search-menu">
+                    <div class="search-related">
+                            <a href="#">
+                                <span>Karthik</span>
+                            </a>
+                            <a href="#">
+                                <span>Mike</span>
+                            </a>
+                            <a href="#">
+                                <span>Hand</span>
+                            </a>
+                            <a href="#">
+                                <span>Neelima Dharma</span>
+                            </a>
+                            <a href="#">
+                                <span>Darion Adrienne Averill</span>
+                            </a>
+                            <a href="#">
+                                <span>Ahana</span>
+                            </a>
+                            <a href="#">
+                                <span>Nihal</span>
+                            </a>
+                            <a href="#">
+                                <span>Hasini</span>
+                            </a>
+                            <a href="#">
+                                <span>Luella Shanene</span>
+                            </a> 
+                    </div>
+                </div>
+            </label>
+        </div>
+       </header>
+    </body>
+</html>
